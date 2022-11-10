@@ -13,22 +13,28 @@ document.addEventListener('DOMContentLoaded', () =>{
     let magassag = document.getElementById('magassag') as HTMLInputElement;
     
     document.getElementById('nev')?.addEventListener('change',()=>{
-        if(artwork.checked){
-
+        let check =false;
+        if(nev.value){
+            document.getElementById('nev')!.textContent="Hibás név";
+            document.getElementById('nev')!.style.color="red"
+            check=false;
+        }else{
+            document.getElementById('nev')!.textContent="";
+            check=true;
         }
     })
     document.getElementById('ertek')?.addEventListener('change',() =>{
-        if(artwork.checked){
+        if(ertek.value){
 
         }
     });
     document.getElementById('ev')?.addEventListener('change', () =>{
-        if(artwork.checked){
+        if(ev.value){
 
         }
     });
     document.getElementById('magassag')?.addEventListener('change',()=>{
-        if(artwork.checked){
+        if(magassag.value){
 
         }
     })
@@ -37,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         
         }
     })
+    let counter =lista.length;
 });
 
 
