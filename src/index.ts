@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     })
     document.getElementById('ertek')?.addEventListener('change',() =>{
         if(ertek.value){
-
+            document.getElementById('ertek')!.textContent="minimum érték 1FT"
+            document.getElementById('ertek')!.style.color="red"
         }
     });
     document.getElementById('ev')?.addEventListener('change', () =>{
