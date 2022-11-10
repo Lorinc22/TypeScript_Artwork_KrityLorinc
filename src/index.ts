@@ -11,8 +11,34 @@ document.addEventListener('DOMContentLoaded', () =>{
     let ertek = document.getElementById('ertek') as HTMLInputElement;
     let ev = document.getElementById('ev') as HTMLInputElement;
     let magassag = document.getElementById('magassag') as HTMLInputElement;
+    
+    document.getElementById('nev')?.addEventListener('change',()=>{
+        if(artwork.checked){
+
+        }
+    })
+    document.getElementById('ertek')?.addEventListener('change',() =>{
+        if(artwork.checked){
+
+        }
+    });
+    document.getElementById('ev')?.addEventListener('change', () =>{
+        if(artwork.checked){
+
+        }
+    });
+    document.getElementById('magassag')?.addEventListener('change',()=>{
+        if(artwork.checked){
+
+        }
+    })
+    document.getElementById('felvetel')?.addEventListener('click', () =>{
+        if(artwork.checked){
+        
+        }
+    })
+});
 
 
 
 
-})
